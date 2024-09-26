@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester - 3</title>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Resetting default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .heading {
+            width: 100%;
+            background-color: #0077ff;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .heading a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .heading a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            width: 60%;
+            max-width: 1200px;
+            margin: 10px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content-section p i {
+            margin-right: 10px;
+            color: #000000;
+        }
+
+        .folder-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .folder {
+            width: 90%;
+            margin-left: -2px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .folder:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        
+        }
+
+        .folder i {
+            font-size: 1.4rem;
+            margin-right: 15px;
+             color: #0077ff;
+        }
+
+        .folder a {
+            text-decoration: none;
+            color: #333;
+
+            flex-grow: 1;
+        }
+
+        .folder a:hover {
+            color: #0077ff;
+        }
+
+        iframe {
+            border-radius: 10px;
+            width: 45%;
+            margin-bottom: 20px;
+            margin: 10px;
+            background-color: rgb(221, 221, 221);
+            padding: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) inset;
+        }
+
+        hr {
+            margin: 10px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .PYQbox{
+            margin-top: -80px;
+        }
+        .PYQbox2{
+            margin-top: -202px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .heading h1 {
+                font-size: 1.5rem;
+            }
+
+            .folder {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .folder i {
+                font-size: 1.5rem;
+            }
+
+            .content-section p {
+                font-size: 1.25rem;
+            }
+
+            .content-section {
+                width: 90%;
+            }
+
+            iframe{
+                margin: 4px;
+                width: 98%;
+            }
+            .PYQbox{
+            margin-top: 0px;
+            }
+            .PYQbox2{
+            margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Semester 3</h1>
+        <a href="index.html">Home</a>
+        <a href="https://acad-sgtb.online/login/index.php">Portal</a>
+        <a href="https://sgtbkhalsa.online/">Website</a>
+    </div>
+
+    <div class="content-section">
+        <p><i class="fas fa-book"></i> Books</p>
+        <div class="folder-container">
+            <div class="folder">
+                <i class="fas fa-book"></i>
+                <a href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2FData%20Structures%20and%20Algorithms.pdf?alt=media&token=90d972b6-0c86-4c7f-a0ff-c9e778def193">Data Structuers & Algo.</a>
+            </div>
+            <div class="folder">
+                <i class="fas fa-book"></i>
+                <a href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2Foperating%20system%20.pdf?alt=media&token=35076f8a-3587-45de-b8cb-38fab1663b3c">Operating System</a>
+            </div>
+            <div class="folder">
+                <i class="fas fa-book"></i>
+                <a href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F%5B1%5D.pdf?alt=media&token=55b3c536-d733-445a-b50b-820e84df979e">Numerical Optimization</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <p><i class="fas fa-file-alt"></i> Notes</p>
+        <div class="folder-container">
+
+            <!-- https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/index.html# -->
+
+            <div class="folder">
+                <i class="fas fa-file-alt"></i>
+                <a href="https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/index.html#">Data Stryctuers & Algo.</a>
+            </div>
+
+            <div class="folder">
+                <i class="fas fa-file-alt"></i>
+                <a href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2FOS-notes.pdf?alt=media&token=13c9b0dd-e762-4085-9c8a-9dbc1a8f302f">Operating System</a>
+            </div>
+            <div class="folder">
+                <i class="fas fa-file-alt"></i>
+                <a href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2FNumerical%20Optimization-notes.pdf?alt=media&token=b393cac1-6354-4ac1-af4d-346f8ab96663">Numerical Optimization</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <p><i class="fas fa-folder"></i> PYQs</p>
+        <div class="folder-container">
+            
+            <div class="folder" style="transform: none;">
+                
+
+                    <div class="PYQbox" style="text-decoration: underline;display: flex; flex-direction: column; text-align: center;">
+                        <div style="display: flex;">
+                            <i class="fas fa-file-alt"></i>
+                            <h3 style="margin-bottom: 5px;">Data Structuers</h3>
+
+                        </div>
+                        <a style=" width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2023-2024-question-papers/computer-science-2023-2024/B.Sc_H_Computer_Sci_5vnDSxw.pdf">2023-24</a>
+
+                        <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2021-2022-question-papers/computer-science-2021-2022/B._Sc._H_Computer_S_asorTYb.pdf"> 2021-2022 </a>
+
+                        <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2019-2020-question-papers/computer-science-2019-2020/B._Sc._H_Computer_S_A0vBrTQ.pdf"> 2019-2020 </a>
+                        <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2016-2017-question-papers/computer-science/B._Sc._Computer_Science_Data__Ycz8eaz.pdf"> 2016-2017 </a>
+
+                    </div>
+               
+            </div>
+            <div class="folder" style="transform: none;">
+                <div style="text-decoration: underline;display: flex; flex-direction: column; text-align: center;">
+                    <div style="display: flex;">
+                        <i class="fas fa-file-alt"></i>
+                        <h3 style="margin-bottom: 5px;">Operating System</h3>
+
+                    </div>
+                    <a style=" width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2023-2024-question-papers/computer-science-2023-2024/B.Sc_H_Computer_Sci_kupvWYf.pdf">2023-24</a>
+                    <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2021-2022-question-papers/computer-science-2021-2022/B._Sc._H_Computer_S_RBq0Ac4.pdf"> 2021-22 </a>
+
+                    <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2020-21-question-papers/computer-science-2020-2021/B._Sc._H_Computer_Sci_jvj1hwQ.pdf"> 2020-21 </a>
+                    <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2019-2020-question-papers/computer-science-2019-2020/B._Sc._H_Computer_S_xuXgWFy.pdf"> 2019-20 </a>
+                    <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2018-2019-question-papers/computer-science-2018-19/B._Sc._H_Computer_Sci_n8tutdd.pdf"> 2018-19 </a>
+                    <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://library.ramanujancollege.ac.in/media/question_papers/2016-2017-question-papers/computer-science/B._Sc._H_Computer_Science_Ope_DbzyR6h.pdf"> 2016-17 </a>
+
+                </div>
+            </div>
+            <div  class="folder" style="transform: none;">
+                <div class="PYQbox2"  style="text-decoration: underline;display: flex; flex-direction: column; text-align: center;">
+                    <div style="display: flex;">
+                        <i class="fas fa-file-alt"></i>
+                        <h3 style="margin-bottom: 5px;">Numerical Optimi.</h3>
+
+                    </div>
+                    <a style=" width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2FNO-pyq.pdf?alt=media&token=d07a6cc5-173c-4167-98bf-3399f415f979">2023-24</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <p><i class="fas fa-video"></i> Videos</p>
+        <p>Data Structures</p> 
+    <div>
+        <iframe width="45%"  src="https://www.youtube.com/embed/njTh_OwMljA?list=PLsn6T340evTTsIu-ziXa2-e58idI3kkl1" title="Data Structures: Linked Lists" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+        <iframe width="45%"  src="https://www.youtube.com/embed/bum_19loj9A?list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H" title="Data Structures &amp; Algorithms #1 - What Are Data Structures?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+    </div>
+
+
+        <p>Operating System</p>
+        <div>
+    
+            <iframe width="45%"  src="https://www.youtube.com/embed/videoseries?si=CBKarRfIrbS6ub_D&amp;list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+            <iframe width="45%"  src="https://www.youtube.com/embed/tVMwMhNvqcY?list=PLpd-PtH0jUsVpr29WNnFrr5A4-MjQfgEW" title="Introduction to Operating System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+    
+        </div>
+
+        <p>Numerical Optimization</p>
+    <iframe width="45%"  src="https://www.youtube.com/embed/lBXdFu6Rwn4?list=PLxdnSsBqCrrHo2EYb_sMctU959D-iPybT" title="Introduction to Optimization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+    <iframe width="45%"  src="https://www.youtube.com/embed/videoseries?si=zdv2qcL1mwu9hQan&amp;list=PLO-6jspot8AKg6Pov9fDHd3ys5_JlyUXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+    <iframe width="45%"  src="https://www.youtube.com/embed/84HOL_EiJ4M?list=PLLtQL9wSL16ioUvHckGCkoWq_CIvyUI0p" title="Introduction to Optimization Techniques" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+    <iframe width="45%"  src="https://www.youtube.com/embed/GlMkLfRDhmc" title="Harvard AM205 video 4.8 - Steepest descent and Newton methods for optimization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+
+    </div>
+</body>
+
+</html>

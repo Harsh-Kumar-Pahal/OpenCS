@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester - 2</title>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Resetting default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .heading {
+            width: 100%;
+            background-color: #0077ff;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .heading a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .heading a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            width: 60%;
+            max-width: 1200px;
+            margin: 10px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content-section p i {
+            margin-right: 10px;
+            color: #000000;
+        }
+
+        .folder-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .folder {
+            width: 90%;
+            margin-left: -2px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            /* text-align: center; */
+            border: 1px solid #ddd;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .folder:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        
+        }
+
+        .folder i {
+            font-size: 1.4rem;
+            margin-right: 15px;
+             color: #0077ff;
+        }
+
+        .folder a {
+            text-decoration: none;
+            color: #333;
+
+            flex-grow: 1;
+        }
+
+        .folder a:hover {
+            color: #0077ff;
+        }
+
+        iframe {
+            border-radius: 10px;
+            width: 45%;
+            margin-bottom: 20px;
+            margin: 10px;
+            background-color: rgb(221, 221, 221);
+            padding: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) inset;
+        }
+
+        hr {
+            margin: 10px 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .PYQbox{
+            margin-top: -80px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .heading h1 {
+                font-size: 1.5rem;
+            }
+
+            .folder {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .folder i {
+                font-size: 1.5rem;
+            }
+
+            .content-section p {
+                font-size: 1.25rem;
+            }
+
+            .content-section {
+                width: 90%;
+            }
+
+            iframe{
+                margin: 4px;
+                width: 98%;
+            }
+            .PYQbox{
+            margin-top: 0px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Semester 2</h1>
+        <a href="index.html">Home</a>
+        <a href="https://acad-sgtb.online/login/index.php">Portal</a>
+        <a href="https://sgtbkhalsa.online/">Website</a>
+    </div>
+
+    <div class="content-section">
+        <p><i class="fas fa-book"></i> Books</p>
+        <div class="folder-container">
+            <div class="folder">
+                <i class="fas fa-book"></i>
+                <a href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2FC%2B%2B.Primer.Plus.6th.Edition.Oct.2011.pdf?alt=media&token=9bd362ae-6b69-4e61-9d98-52e03e178b65"> C++ Primer</a>
+            </div>
+            <div class="folder">
+                <i class="fas fa-book"></i>
+                <a href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2FDiscrete%20Mathematics%20and%20Its%20Applications%20-%208e%20(Kenneth%20Rosen)%20%5B9781259676512%5D_compressed-compressed.pdf?alt=media&token=e52e7a00-24b6-4bed-b37e-abe5b817cf0b">Discrete Mathematical Structures</a>
+            </div>
+            <div class="folder">
+                <i class="fas fa-book"></i>
+                <a href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2Fintroduction-to-prob-models-11th-edition.pdf?alt=media&token=158d5203-9508-44b4-978f-18824a2d141e">Probability for Computing</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="content-section">
+        <p><i class="fas fa-folder"></i> PYQs</p>
+        <div class="folder-container">
+            
+            <div class="folder" style="transform: none;">
+                
+
+                    <div class="PYQbox" style="text-decoration: underline;display: flex; flex-direction: column; text-align: center;">
+                        <div style="display: flex;">
+                            <i class="fas fa-file-alt"></i>
+                            <h3 style="margin-bottom: 5px;">Intro. to C++</h3>
+
+                        </div>
+                        <a style=" width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F23-24c%2B%2B.pdf?alt=media&token=ca876576-1f11-4ab9-991e-a36fc979bd1f">2023-24</a>
+                        <a style=" width: 100% ; margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray; " href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F22-23c%2B%2B.pdf?alt=media&token=f38fa493-6322-4f95-87c8-336242f78e32"> 2022-23 </a>
+                        <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F21-22c%2B%2B.pdf?alt=media&token=53593572-bb47-4e62-93cd-29c2102a19ab"> 2021-22 </a>
+                    </div>
+               
+            </div>
+            <div class="folder" style="transform: none;">
+                <div style="text-decoration: underline;display: flex; flex-direction: column; text-align: center;">
+                    <div style="display: flex;">
+                        <i class="fas fa-file-alt"></i>
+                        <h3 style="margin-bottom: 5px;">Discrete Maths</h3>
+
+                    </div>
+                    <a style=" width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F2023-24csa.pdf?alt=media&token=b675f237-7edd-4657-9f7a-1c4204fdcaa7">2023-24</a>
+                    <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F2022-23csa.pdf?alt=media&token=975b64a0-19f7-4503-b450-9071bff713d0"> 2022-23 </a>
+                    <a style=" width: 100% ; margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray; " href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F2022-23%5B1%5Dcsa.pdf?alt=media&token=4c98642f-cfe0-415e-bc2d-21df6844dee1"> 2022-23 </a>
+
+                    <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F2021-22csa.pdf?alt=media&token=68356d5a-a52b-467f-8601-fdc83f57b240"> 2021-22 </a>
+                    <a style="width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F2016-17csa.pdf?alt=media&token=a28f5e62-ee1a-4508-bace-f4c33d7e6bf4"> 2016-17 </a>
+
+                </div>
+            </div>
+            <div  class="folder" style="transform: none;">
+                <div class="PYQbox"  style="text-decoration: underline;display: flex; flex-direction: column; text-align: center;">
+                    <div style="display: flex;">
+                        <i class="fas fa-file-alt"></i>
+                        <h3 style="margin-bottom: 5px;">Intro. to C++</h3>
+
+                    </div>
+                    <a style=" width: 100% ;margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray;" href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F2023-24la.pdf?alt=media&token=605ca06f-c29a-4a9e-98d9-60b7c797769a">2023-24</a>
+                    <a style=" width: 100% ; margin: 5px; border: 1px solid #ddd; padding: 5px; border-radius: 10px; box-shadow: 1px 1px 4px gray; " href="https://firebasestorage.googleapis.com/v0/b/thenetworks-d338e.appspot.com/o/OpenCS%2FBooks%2F2022-23la.pdf?alt=media&token=a1d6f9f1-082e-4a8a-af9f-440cc011f93f"> 2022-23 </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <p><i class="fas fa-video"></i> Videos</p>
+        <p>C++</p>
+        <div>
+            <iframe width="45%"  src="https://www.youtube.com/embed/videoseries?si=nQpjH_XXDNT0KuGS&amp;list=PLwKi4ifaZ2_KCLIoBu0j-kXw4wdj2F9K1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+        <iframe width="45%"  src="https://www.youtube.com/embed/videoseries?si=RMFDGyqhwPN-FtIm&amp;list=PLfc1-isKPs7JetJs8Lh_1lDbC_Poue4En" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+
+            <iframe  src="https://www.youtube.com/embed/videoseries?si=VOSZjS8NrRnbC93z&amp;list=PLwKi4ifaZ2_L7RYydQTTDPYkDekml0wsy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/rfscVS0vtbw" title="Learn Python - Full Course for Beginners [Tutorial]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <p>Discrete Mathematics</p>
+        <iframe width="45%" src="https://www.youtube.com/embed/XE8q36O7Y6w?list=PLfc1-isKPs7KKhMWIMrfIGEhQ9NS4NbGI" title="proportion in discrete maths | HINDI | Niharika Panda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+        <iframe width="45%" src="https://www.youtube.com/embed/videoseries?si=iJcbAuvzgqS8Oizs&amp;list=PLU6SqdYcYsfJ27O0dvuMwafS3X8CecqUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius: 12px;"></iframe>
+        </div>
+
+        <p>Probability</p>
+    <iframe width="45%"  src="https://www.youtube.com/embed/videoseries?si=n8pQWftL4wc3TyBx&amp;list=PL5KkMZvBpo5C9nhzyacvNtcWHLh3mvXJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+    <iframe width="45%"  src="https://www.youtube.com/embed/videoseries?si=PSHjoRbCCpq2iZz3&amp;list=PL5KkMZvBpo5BFwSEeNMH5keKPZGNdP0EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+
+    </div>
+</body>
+
+</html>
