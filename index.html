@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+
+
+        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHBDC5TH7H"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,124 +12,162 @@
 
   gtag('config', 'G-CHBDC5TH7H');
 </script>
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenCS</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body{
-            align-items: center;
-            justify-content: center;
-            font-family: 'Courier New', Courier, monospace;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .heading{
-            text-align: center;
-            color: white;
-            border: solid;
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 70%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .heading {
             width: 100%;
-            height: 100px;
-            margin-bottom: 4%;
-            background-color: rgb(132, 0, 255);
+            background-color: #0077ff;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .sem3{
-            display: flex;
-            flex-direction: column;
-            margin-left: 10%;
-            margin-bottom: 4%;
-            text-align: center;
-            width: 80%;
-            height: 30%;
-            background-color: aliceblue;
-            border-radius: 6px;
-            border: solid 1px rgb(128, 128, 128);
+        .heading h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
         }
 
-        .counter{
-            text-align: center;
-            color: rgb(132, 0, 255);
+        .heading a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
             font-weight: bold;
+        }
+
+        .heading a:hover {
+            text-decoration: underline;
+        }
+        .semester-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .semester-card {
+            background-color: white;
+            /* border-radius: 8px; */
+            overflow: hidden;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .semester-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .semester-card a {
+            display: block;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .semester-card i {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #0077ff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .nav {
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="heading">
         <h1>OpenCS</h1>
-        <a href="https://acad-sgtb.online/login/index.php" style="color: white;">portal</a>
-        <a href="https://sgtbkhalsa.online/" style="color: white;">college-website</a>
-        <a href="about.html" style="color: white;">about</a>
+        <a href="index.html">Home</a>
+        <a href="https://acad-sgtb.online/login/index.php">Portal</a>
+        <a href="https://sgtbkhalsa.online/">Website</a>
     </div>
 
-    
-    
-    <div class="sem3" >
-        <a href="Sem-1.html"> 
-            <p >
-                Sem-1
-            </p>
-        </a>
-        
-    </div>
-
-    <div class="sem3"  >
-        <a href="sem2.html" > 
-            <p>
-                Sem-2
-            </p>
-        </a>
-    </div>
-
-    <div class="sem3"  >
-        <a href="sem3.html"> 
-            <p>
-                Sem-3
-            </p>
-        </a>
-    </div>
-
-    <div class="sem3"  >
-        <a href="Sem-4.html"> 
-            <p>
-                Sem-4
-            </p>
-        </a>
-    </div>
-
-    <div class="sem3"  >
-        <a href="Sem-5.html"> 
-            <p>
-                Sem-5
-            </p>
-        </a>
-    </div>
-
-    <div class="sem3"  >
-        <a href="Sem-6.html"> 
-            <p>
-                Sem-6
-            </p>
-        </a>
-    </div>
-
-    <div class="sem3"  >
-        <a href="Sem-7.html"> 
-            <p>
-                Sem-7
-            </p>
-        </a>
-    </div>
-
-    <div class="sem3"  >
-        <a href="Sem-8.html"> 
-            <p>
-                Sem-8
-            </p>
-        </a>
-    </div>
-
-    <hr>
-
-
+    <main class="container">
+        <div class="semester-grid">
+            <div class="semester-card">
+                <a href="Sem-1.html">
+                    <i class="fas fa-1"></i>
+                    <p>Semester 1</p>
+                </a>
+            </div>
+            <!-- <div class="semester-card">
+                <a href="sem-2.html">
+                    <i class="fas fa-2"></i>
+                    <p>Semester 2</p>
+                </a>
+            </div> -->
+            <div class="semester-card">
+                <a href="sem-3.html">
+                    <i class="fas fa-3"></i>
+                    <p>Semester 3</p>
+                </a>
+            </div>
+            <!-- <div class="semester-card">
+                <a href="Sem-4.html">
+                    <i class="fas fa-4"></i>
+                    <p>Semester 4</p>
+                </a>
+            </div> -->
+            <div class="semester-card">
+                <a href="Sem5.html">
+                    <i class="fas fa-5"></i>
+                    <p>Semester 5</p>
+                </a>
+            </div>
+            <!-- <div class="semester-card">
+                <a href="Sem-6.html">
+                    <i class="fas fa-6"></i>
+                    <p>Semester 6</p>
+                </a>
+            </div>
+            <div class="semester-card">
+                <a href="Sem-7.html">
+                    <i class="fas fa-7"></i>
+                    <p>Semester 7</p>
+                </a>
+            </div>
+            <div class="semester-card">
+                <a href="Sem-8.html">
+                    <i class="fas fa-8"></i>
+                    <p>Semester 8</p>
+                </a>
+            </div> -->
+        </div>
+    </main>
 </body>
 </html>
